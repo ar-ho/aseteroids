@@ -12,11 +12,19 @@ def main():
     dt: float = 0.0
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     while True:
+        dt = clock.tick(60) / 1000
+        ''''    
+        print(f"{dt}")
+        dt stands for delta time
+        the amount of time that has passed since the last frame was drawn
+        time between frames in seconds
+        '''
         log_state()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
         '''
@@ -33,12 +41,5 @@ def main():
         When you call pygame.display.flip(), it quickly flips the chalkboard around. Everything you just drew on the "back" becomes visible to the player all at once.
         '''
 
-        dt = clock.tick(60) / 1000
-        ''''    
-        print(f"{dt}")
-        dt stands for delta time
-        the amount of time that has passed since the last frame was drawn
-        time between frames in seconds
-        '''
 if __name__ == "__main__":
     main()
