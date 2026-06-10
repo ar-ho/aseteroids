@@ -5,6 +5,7 @@ from logger import log_state
 from player import *
 from asteroid import *
 from asteroidfield import *
+from shot import *
 from logger import log_event
 
 def main():
@@ -20,6 +21,7 @@ def main():
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
     asteroids = pygame.sprite.Group()
+    shots = pygame.sprite.Group()
     #creates the updatable, drawable groups and asteroids
 
     Player.containers = (updatable, drawable)
@@ -27,6 +29,7 @@ def main():
     Asteroid.containers = (asteroids, updatable, drawable)
     #adds the asteroid class to the updatable and drawable groups
     AsteroidField.containers = (updatable,)
+    Shot.containers = (shots, updatable, drawable)
 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     asteroid_field = AsteroidField()
@@ -52,13 +55,16 @@ def main():
                 log_event("player_hit")
                 print("Game Over!")
                 sys.exit()
+        '''                
         for a1 in asteroids:
             for s in shots:
                 if a1.collides_with(s):
                     log_event("asteroid_shot")
                     a1.kill()
                     s.kill()
+        '''
         pygame.display.flip()
+
         '''
         The sequence of the above code is important:
         Fill the screen with black first.
