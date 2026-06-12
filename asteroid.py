@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from circleshape import *
 from constants import *
 import pygame
@@ -8,12 +10,17 @@ class Asteroid(CircleShape):
 
     def __init__(self, x: float, y: float, radius: float) -> None:
         super().__init__(x, y, radius)
+        #calls the constructor of the parent class CircleShape to initialize the position and radius of the asteroid
 
     def draw(self, screen):
         pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
+        #draws the asteroid on the screen as a white circle 
+        # with the specified position and radius
 
     def update(self, dt: float) -> None:
         self.position += self.velocity * dt
+        #updates the position of the asteroid based on its velocity 
+        #and the time delta (dt)
 
     def split(self):
         self.kill()
