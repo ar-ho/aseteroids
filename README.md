@@ -2,6 +2,8 @@
 Is a game that is set in space in which you have to evade and destroy moving asteroids.  
 The graphics are 2D like space invaders from the last century.
 
+![Gameplay](gameplay.gif) 
+
 ## 🏆 Motivation
 A game like this is a great way to build a project,  
 because you receive immediate feedback from the code that is being turned into a game. 
@@ -29,7 +31,7 @@ git clone https://github.com/ar-ho/astroblast.git
 
 4. Execute main.py.
 ```
-python ~/projects/astroblast/main.py
+python3 ~/projects/astroblast/main.py
 ```
 
 ### Windows
