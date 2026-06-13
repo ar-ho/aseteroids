@@ -7,8 +7,8 @@ The gameplay can be fast paced and challenging as the asteroids come in differen
 ![Gameplay](gameplay.gif) 
 
 ## 🏆 Motivation
-A game like this is a great way to build a project,  
-because you receive immediate feedback from the code that is being turned into a game. 
+Building a game like this is a great way to develop programming skills because it provides immediate visual feedback. Every change in the code can be directly seen in the behavior of the game.  
+Working on a game project also offers practical experience with problem-solving, game logic, collision detection, user input, and graphical rendering. Progress is visible from the beginning which helps to maintain motivation.
 
 ## 💬 Disclaimer:
 This is a project that started out from boot.dev - I recommend to check them out!  
