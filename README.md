@@ -1,6 +1,8 @@
 # Astroblast
-Is a game that is set in space in which you have to evade and destroy moving asteroids.  
-The graphics are 2D like space invaders from the last century.
+Is a game that is set in space in which the player has to evade and destroy moving asteroids.  
+The objective is to survive as long as possible while preventing collisions and clearing obstacles from your path.  
+The graphics are simple 2D visuals, similar to classic arcade games such as Space Invaders from the past century.  
+The gameplay can be fast paced and challenging as the asteroids come in different sizes, move with different speeds and split unpredictably across the screen.
 
 ![Gameplay](gameplay.gif) 
 
@@ -45,6 +47,9 @@ python3 ~/projects/astroblast/main.py
 
 ## 📖 Usage
 - Use WASD keys to move and space for shooting.
+- 
+-
+-
 
 ## 🤝 Contributing
 Feel free to clone, use and enhance this code.
