@@ -47,9 +47,6 @@ python3 ~/projects/astroblast/main.py
 
 ## 📖 Usage
 - Use WASD keys to move and space for shooting.
-- 
--
--
 
 ## 🤝 Contributing
 Feel free to clone, use and enhance this code.
